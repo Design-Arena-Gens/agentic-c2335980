@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.info-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.info-section h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.info-section ul {
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.info-section li {
+  margin-bottom: 10px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.service-header {
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.service-header h3 {
+  color: #667eea;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.badge {
+  display: inline-block;
+  background: #fbbf24;
+  color: #78350f;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.badge.popular {
+  background: #10b981;
+  color: white;
+}
+
+.badge.premium {
+  background: #8b5cf6;
+  color: white;
+}
+
+.pricing-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.pricing-section h4 {
+  color: #374151;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.price-label {
+  color: #6b7280;
+}
+
+.price-value {
+  font-weight: bold;
+  color: #667eea;
+}
+
+.features {
+  margin: 20px 0;
+}
+
+.features h4 {
+  color: #374151;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features li {
+  padding: 6px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.reviews {
+  margin: 20px 0;
+  padding: 15px;
+  background: #fef3c7;
+  border-radius: 8px;
+  border-left: 4px solid #fbbf24;
+}
+
+.reviews h4 {
+  color: #78350f;
+  margin-bottom: 10px;
+}
+
+.review-item {
+  margin: 10px 0;
+  font-style: italic;
+  color: #92400e;
+}
+
+.cta-button {
+  display: block;
+  width: 100%;
+  padding: 12px 24px;
+  background: #667eea;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #5568d3;
+}
+
+.comparison-table {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  overflow-x: auto;
+}
+
+.comparison-table h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
